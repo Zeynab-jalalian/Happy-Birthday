@@ -15,8 +15,12 @@ button.addEventListener('click',function(){
     let birthDay=birthDate.getDate(); //روز تولد
 
     if(birthMonth==todayMonth && birthDay==todayDay){
-        message.innerHTML="Happy Birthday!"
+        message.innerHTML="Happy Birthday!";
+        message.classList.add('true');
+        message.classList.remove('false');
     }else{
-        message.innerHTML="It's not your birthday!"
+        message.innerHTML="It's not your birthday!";
+        message.classList.add('false');
+        message.classList.remove('true');
     }
 })
