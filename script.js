@@ -10,7 +10,7 @@ button.addEventListener('click',function(){
     let todayMonth=todayDate.getMonth(); //ماه امروز
     let todayDay=todayDate.getDate(); //روز امروز
 
-    let birthDate=new Date(); // تاریخ  تولد
+    let birthDate=new Date(input); // تاریخ  تولد
     let birthMonth=birthDate.getMonth(); //ماه تولد
     let birthDay=birthDate.getDate(); //روز تولد
 
