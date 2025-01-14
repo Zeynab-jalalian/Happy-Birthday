@@ -2,6 +2,7 @@
 button click 
 if todaydate=birthdate
 */
+let body=document.querySelector('body');
 let button=document.getElementById('checkButton'); //دسترسی به دکمه
 let message=document.getElementById('message');//دسترسی به پیغام نهایی
 button.addEventListener('click',function(){
@@ -18,9 +19,11 @@ button.addEventListener('click',function(){
         message.innerHTML="Happy Birthday!";
         message.classList.add('true');
         message.classList.remove('false');
+        body.style.background="#32cd32";
     }else{
         message.innerHTML="It's not your birthday!";
         message.classList.add('false');
         message.classList.remove('true');
+        body.style.background="red";
     }
 })
